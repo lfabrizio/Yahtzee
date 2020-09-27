@@ -23,18 +23,9 @@ public class Die {
     }
 
 
-    public List<Die> Dice() {
-        for (int i = 0; i < 6; i++) {
-            //add()
-//            add()
-//            add()
-
-        }
-
-
     public int getValue(){
         System.out.println(diceValue);
         return diceValue;
     }
 
-}}
+}
