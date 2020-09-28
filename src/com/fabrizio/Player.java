@@ -25,5 +25,14 @@ public class Player {
         public void roll(Random rand, int choice){
         dice.get(choice).roll(rand);
         }
+        // lets display the hand
+        public void displayHand(){
+
+        }
+
+        //
+
+
+
 
     }
