@@ -27,12 +27,12 @@ public class Player {
         }
         // lets display the hand
         public void displayHand(){
-
+        //display
         }
 
-        //
-
-
+        public void reRoll(Random rand){
+            // prompt to reroll
+        }
 
 
     }

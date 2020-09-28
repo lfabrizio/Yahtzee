@@ -15,7 +15,8 @@ public class Console {
             }
             // lets prompt the reroll for users choice
             System.out.println("which exact die would you like to roll?");
-            String reRoll = in.nextLine()
+            String reRoll = in.nextLine();
+            // reRoll
         }
     }
 }
