@@ -1,5 +1,7 @@
 package com.fabrizio;
 
+import java.util.Random;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -14,7 +16,12 @@ public class Main {
         //v1.7 I can get a single die choice from the user which is rerolled
         //v1.8 I can get multiple dice selections from the user which are rerolled.
         //v1.9 Polish up the user interaction.eate a console based application that will let a user roll 5 dice 3 times. After each roll they can pick which dice they want to reroll.
-
+      Random rand = new Random();
+      Player play = new Player();
+        System.out.println("roll");
+      play.roll(rand);
+        System.out.println("pick a specific die");
+      play.roll(rand, 2);
 
     }
 }
