@@ -10,7 +10,7 @@ public class Console {
         for(int i = 0; i < 3; i++){
             System.out.println("roll again?");
             String response = in.nextLine();
-            if(response.matches("no")){
+            if(response.matches("no") || response.matches("n")){
                 break;
             }
             // lets prompt the reroll for users choice
