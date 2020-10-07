@@ -4,19 +4,14 @@ import java.util.Scanner;
 
 public class Console {
     // console class
-    Scanner in = new Scanner(System.in);
 
-    public void userPrompt(){
-        for(int i = 0; i < 3; i++){
-            System.out.println("roll again?");
-            String response = in.nextLine();
-            if(response.matches("no") || response.matches("n")){
-                break;
-            }
-            // lets prompt the reroll for users choice
-            System.out.println("which exact die would you like to roll?");
-            String reRoll = in.nextLine();
-            // reRoll
-        }
+   static public void welcome(String gameChoice) {
+       System.out.println("Welcome to " + gameChoice);
+   }
+   static public void log(String output){
+       System.out.println(output);
+    }
+    static public void log(int output){
+        System.out.println(output);
     }
 }

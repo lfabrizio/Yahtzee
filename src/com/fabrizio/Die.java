@@ -8,7 +8,7 @@ public class Die {
     // get/create the die
     private int diceSides = 6; // dice sides
     private int diceValue = 0; //to store value of dice rolled
-
+// empty constructor
     public Die() {
         diceValue = 1;
     }
@@ -27,5 +27,7 @@ public class Die {
         System.out.println(diceValue);
         return diceValue;
     }
-
+    public void setValue(int diceValue){
+        this.diceValue=diceValue;
+    }
 }
