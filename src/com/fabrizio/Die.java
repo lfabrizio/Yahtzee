@@ -18,16 +18,17 @@ public class Die {
         this.diceValue = sides;
     }
 
-    public void roll(Random rand){
-         diceValue = rand.nextInt(diceSides)+ 1;
-    }
+    public int roll(Random rand){
+        diceValue = rand.nextInt(diceSides)+ 1;
+        return diceValue;
+         }
 
 
     public int getValue(){
         System.out.println(diceValue);
         return diceValue;
     }
-    public void setValue(int diceValue){
-        this.diceValue=diceValue;
+
+    //public void setValue(int diceValue){
+       // this.diceValue=diceValue;
     }
-}
