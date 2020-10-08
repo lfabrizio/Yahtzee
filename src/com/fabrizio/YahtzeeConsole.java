@@ -8,7 +8,14 @@ import java.util.Scanner;
 public class YahtzeeConsole extends Console{
     public static Scanner scanner  = new Scanner(System.in);
 
-    static public void startGame() {welcome("Yahtzee");}
+//    static public void startGame() {
+//        System.out.println("Welcome to Yahtzee!");
+//        System.out.println("Press any key to begin");
+//        scanner.nextLine();
+//        for(int i = 0; i < 5; i++){
+//            dice.add(new Die());
+//        }
+//    }
 
     static public void displayHand(List<Integer> dice){
         System.out.print("___________");
@@ -17,19 +24,19 @@ public class YahtzeeConsole extends Console{
         }
         System.out.print("\n------\n");
     }
-    static public int getChoice(){
-        System.out.print("which die would you like to roll? 1-5");
-        String input = scanner.nextLine();
-        return Integer.parseInt(input) -1;
-    }
-    static public List<Integer> getChoices() {
-        System.out.print("which die do you want to roll?");
-        String input = scanner.nextLine();
-        String[] inputArray = input.split(" ");
-        List <Integer> choices = new ArrayList<>();
-                for (String choice : inputArray){
-                    choices.add(Integer.parseInt(choice) - 1);
-                }
-                return choices;
-    }
+//    static public int getChoice(){
+//        System.out.print("which die would you like to roll? 1-5");
+//        String input = scanner.nextLine();
+//        return Integer.parseInt(input) -1;
+//    }
+//    static public List<Integer> getChoices() {
+//        System.out.print("which die do you want to roll?");
+//        String input = scanner.nextLine();
+//        String[] inputArray = input.split(" ");
+//        List <Integer> choices = new ArrayList<>();
+//                for (String choice : inputArray){
+//                    choices.add(Integer.parseInt(choice) - 1);
+//                }
+//                return choices;
+//    }
 }

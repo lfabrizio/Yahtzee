@@ -2,12 +2,13 @@ package com.fabrizio;
 
 import java.util.List;
 import java.util.Random;
-//v1.0 I have a die
-// v1.1 that die can be rolled to have a random value
+import java.util.Scanner;
+
 public class Die {
-    // get/create the die
+    Scanner scan = new Scanner(System.in);
+    private Random rand =new Random();
     private int diceSides = 6; // dice sides
-    private int diceValue = 0; //to store value of dice rolled
+    private int diceValue; //to store value of dice rolled
 // empty constructor
     public Die() {
         diceValue = 1;
@@ -18,11 +19,10 @@ public class Die {
         this.diceValue = sides;
     }
 
-    public int roll(Random rand){
+    public void roll(){
         diceValue = rand.nextInt(diceSides)+ 1;
-        return diceValue;
-         }
 
+    }
 
     public int getValue(){
         System.out.println(diceValue);
