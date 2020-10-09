@@ -13,7 +13,7 @@ public class Player {
         Scanner scanner = new Scanner(System.in);
 
 
-
+        // fresh code , trying different approach
            public void playGame() {
                // create list , then loop through 5 dice and add all
                System.out.println("Welcome to Yahtzee!");
@@ -21,7 +21,7 @@ public class Player {
                scanner.nextLine();
                for (int count = 0; count < 5; count++) {
                    System.out.println(dice.add(new Die()));
-                  // dice.get(count).roll()
+                   dice.get(count).roll();
                }
            }
 
