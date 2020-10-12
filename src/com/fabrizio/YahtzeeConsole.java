@@ -6,16 +6,12 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class YahtzeeConsole extends Console{
-    public static Scanner scanner  = new Scanner(System.in);
+    public YahtzeeConsole() {
+        Scanner scanner = new Scanner(System.in);
+        Random rand = new Random();
+        Player play = new Player(5);
 
-//    static public void startGame() {
-//        System.out.println("Welcome to Yahtzee!");
-//        System.out.println("Press any key to begin");
-//        scanner.nextLine();
-//        for(int i = 0; i < 5; i++){
-//            dice.add(new Die());
-//        }
-//    }
+    }
 
     static public void displayHand(List<Integer> dice){
         System.out.print("___________");

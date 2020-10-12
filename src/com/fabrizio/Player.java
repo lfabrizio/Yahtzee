@@ -6,16 +6,19 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Player {
-    private final ArrayList<Die> dice;
-    {
-        dice = new ArrayList<>();
+    Scanner scanner = new Scanner(System.in);
+    private List<Die> dice = new ArrayList<Die>();
+
+    public Player(int size) {
+
+        for (int count = 0; count < size; count++)
+            dice.add(new Die());
     }
-        Scanner scanner = new Scanner(System.in);
 
 
         // fresh code , trying different approach
            public void playGame() {
-               // create list , then loop through 5 dice and add all
+
                System.out.println("Welcome to Yahtzee!");
                System.out.println("Press any key to begin");
                scanner.nextLine();
@@ -25,12 +28,13 @@ public class Player {
                }
            }
 
-               // roll the whole players hand
-//        public void roll(Random rand){
-//            for(var die : dice){
-//                //System.out.println(die.roll());
-//            }
-//        }
+
+     public void roll(Random rand){
+        for(var die : dice){
+               //System.out.println(die.roll());
+
+        }
+    }
                // overloading , this will roll at that index if number is submitted. choice will be the index
 //        public void roll(Random rand, int choice) {
 //            int selection = choice -1;

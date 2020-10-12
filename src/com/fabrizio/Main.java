@@ -12,7 +12,7 @@ public class Main {
     Player play = new Player();
     play.playGame();
 
-        System.out.println("-------------");
+        System.out.println("which die would you like to roll?");
    // YahtzeeConsole.displayHand(play.getDice());
 
        //
