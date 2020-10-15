@@ -17,6 +17,7 @@ public class YahtzeeConsole extends Console{
         Player play = new Player(5);
         play.Roll(random);
         Console.showRoll(play.getDice());
+        // implement user choice for re-roll 
     }
 //
 //    static public void displayHand(List<Integer> dice){
