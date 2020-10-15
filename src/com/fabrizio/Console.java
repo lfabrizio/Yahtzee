@@ -8,23 +8,25 @@ public class Console {
 
    static public void welcome(String gameChoice) {
 
-       System.out.println("Welcome to " + gameChoice);
+       System.out.print("Welcome to " + gameChoice);
    }
-   static public void log(String output)
-   {
-       System.out.println(output);
+
+
+    static public void showRoll(List<Die> dice){
+        System.out.print("*****Roll*****");
+        for(var die : dice){
+            System.out.print(die.getDiceValue() + " ");
+        }
+        System.out.println("\n----\n");
+    }
+
+    static public void log(String output)
+    {
+        System.out.println(output);
     }
     static public void log(int output){
 
-       System.out.println(output);
-    }
-
-    static public void showRoll(List<Die> dice){
-        System.out.println("*****Roll*****");
-        for(var die : dice){
-            System.out.println(die.getDiceValue() + " ");
-        }
-        System.out.println("\n----\n");
+        System.out.println(output);
     }
 
 

@@ -21,7 +21,7 @@ public class Die {
 
     // Get Dice value after roll
     public int getDiceValue() {
-        System.out.println(diceValue);
+     //   System.out.println(diceValue);
         return diceValue;
     }
 
