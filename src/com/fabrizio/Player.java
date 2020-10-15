@@ -29,14 +29,13 @@ public class Player {
             dice.get(specificDice).Value(random);
         }
 
+        public void Roll(Random random, List<Integer> choices){
+            for(int choice : choices){
+                Roll(random, choice);
+            }
 
+        }
 
-//    //multiple
-//        public void roll(Random rand, List<Integer> choices) {
-//            for (int choice : choices) {
-//                 roll(rand, choice);
-//            }
-//        }
 
 //        public int findDie(Die checkDie){
 //            return this.dice.get(dice.indexOf(checkDie)).getValue();

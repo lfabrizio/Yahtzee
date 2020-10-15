@@ -7,10 +7,14 @@ import java.util.Scanner;
 
 public class YahtzeeConsole extends Console{
     public YahtzeeConsole() {
-        Scanner scanner = new Scanner(System.in);
-        Random rand = new Random();
-        Player play = new Player(5);
+        // empty constructor 
 
+    }
+
+    public void playGame() {
+        Random random = new Random();
+        Player play = new Player(5);
+        play.Roll(random);
     }
 
     static public void displayHand(List<Integer> dice){
@@ -25,7 +29,7 @@ public class YahtzeeConsole extends Console{
 //        String input = scanner.nextLine();
 //        return Integer.parseInt(input) -1;
 //    }
-/        static public List<Integer> getChoices() {
+//     static public List<Integer> getChoices() {
 //        System.out.print("which die do you want to roll?");
 //        String input = scanner.nextLine();
 //        String[] inputArray = input.split(" ");
