@@ -25,7 +25,7 @@ public class YahtzeeConsole extends Console{
 //        String input = scanner.nextLine();
 //        return Integer.parseInt(input) -1;
 //    }
-//    static public List<Integer> getChoices() {
+/        static public List<Integer> getChoices() {
 //        System.out.print("which die do you want to roll?");
 //        String input = scanner.nextLine();
 //        String[] inputArray = input.split(" ");

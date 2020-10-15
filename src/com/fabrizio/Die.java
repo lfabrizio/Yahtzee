@@ -5,30 +5,31 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Die {
-    Scanner scan = new Scanner(System.in);
-    private Random rand =new Random();
-    private int diceSides = 6; // dice sides
-    private int diceValue; //to store value of dice rolled
-// empty constructor
+
+    private int diceSides = 6;
+    private int diceValue;
+
+    //constructor
     public Die() {
         diceValue = 1;
     }
-//overloading
-    public Die(int sides){
-        diceValue = 1;
-        this.diceValue = sides;
+
+    // A Dice Value Method
+    public void Value(Random random) {
+        diceValue = random.nextInt(diceSides) + 1;
     }
 
-    public void roll(){
-        diceValue = rand.nextInt(diceSides)+ 1;
-
-    }
-
-    public int getValue(){
+    // Get Dice value after roll
+    public int getDiceValue() {
         System.out.println(diceValue);
         return diceValue;
     }
 
     //public void setValue(int diceValue){
-       // this.diceValue=diceValue;
-    }
+    // this.diceValue=diceValue;
+    //}
+}
+
+
+
+

@@ -13,6 +13,7 @@ public class Player {
 
         for (int count = 0; count < size; count++)
             dice.add(new Die());
+        // r
     }
 
 

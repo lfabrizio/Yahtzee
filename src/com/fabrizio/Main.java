@@ -9,10 +9,11 @@ public class Main {
     public static void main(String[] args) {
      Random rand = new Random();
    //YahtzeeConsole.startGame();
-    Player play = new Player();
-    play.playGame();
+    Player play = new Player(5);
 
         System.out.println("which die would you like to roll?");
+        // nextInt and scanner
+        //output new dice roll
    // YahtzeeConsole.displayHand(play.getDice());
 
        //
