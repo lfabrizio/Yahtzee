@@ -39,8 +39,9 @@ public class Console {
 //        return Integer.parseInt(input) -1;
 //    }
 //     static public List<Integer> getChoices() {
-//        System.out.print("which die do you want to roll?");
+//        System.out.print("Which Die Would You Like to Roll?");
 //        String input = scanner.nextLine();
+    // need to split spaces
 //        String[] inputArray = input.split(" ");
 //        List <Integer> choices = new ArrayList<>();
 //                for (String choice : inputArray){
