@@ -33,15 +33,19 @@ public class Console {
     }
 
 
-//        // fresh code , trying different approach
-//           will implement more user prompts
-//
-//               System.out.println("Welcome to Yahtzee!");
-//               System.out.println("Press any key to begin");
-//               scanner.nextLine();
-//               for (int count = 0; count < 5; count++) {
-//                   System.out.println(dice.add(new Die()));
-//                   dice.get(count).roll();
-//               }
-//           }
+//    static public int getChoice(){
+//        System.out.print("which die would you like to roll? 1-5");
+//        String input = scanner.nextLine();
+//        return Integer.parseInt(input) -1;
+//    }
+//     static public List<Integer> getChoices() {
+//        System.out.print("which die do you want to roll?");
+//        String input = scanner.nextLine();
+//        String[] inputArray = input.split(" ");
+//        List <Integer> choices = new ArrayList<>();
+//                for (String choice : inputArray){
+//                    choices.add(Integer.parseInt(choice) - 1);
+//                }
+//                return choices;
+//    }
 }

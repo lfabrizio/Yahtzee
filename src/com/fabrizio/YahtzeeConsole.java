@@ -21,19 +21,5 @@ public class YahtzeeConsole extends Console{
       //  play.Roll(random, );
     }
 
-//    static public int getChoice(){
-//        System.out.print("which die would you like to roll? 1-5");
-//        String input = scanner.nextLine();
-//        return Integer.parseInt(input) -1;
-//    }
-//     static public List<Integer> getChoices() {
-//        System.out.print("which die do you want to roll?");
-//        String input = scanner.nextLine();
-//        String[] inputArray = input.split(" ");
-//        List <Integer> choices = new ArrayList<>();
-//                for (String choice : inputArray){
-//                    choices.add(Integer.parseInt(choice) - 1);
-//                }
-//                return choices;
-//    }
+
 }
