@@ -22,9 +22,9 @@ public class Console {
     static public void showRoll(List<Die> dice){
         System.out.println("*****Roll*****");
         for(var die : dice){
-            System.out.println(die.getDiceValue());
+            System.out.println(die.getDiceValue() + " ");
         }
-        System.out.println("\n");
+        System.out.println("\n----\n");
     }
 
 

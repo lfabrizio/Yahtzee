@@ -7,10 +7,11 @@ import java.util.Scanner;
 
 public class Player {
 
-        private List<Die> dice = new ArrayList<Die>();
+        private List<Die> dice;
 
         // create hand and pass in size-- loop though the size, count and add to List
         public Player(int size){
+            dice = new ArrayList<Die>();
             for(int count = 0; count < size; count++){
                 dice.add(new Die());
             }
