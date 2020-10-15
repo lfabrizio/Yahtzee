@@ -12,18 +12,20 @@ public class YahtzeeConsole extends Console{
     }
 
     public void playGame() {
+        Console.welcome("Yahtzee");
         Random random = new Random();
         Player play = new Player(5);
         play.Roll(random);
+        Console.showRoll(play.getDice());
     }
-
-    static public void displayHand(List<Integer> dice){
-        System.out.print("___________");
-        for(var die : dice){
-            System.out.print(die + " ");
-        }
-        System.out.print("\n------\n");
-    }
+//
+//    static public void displayHand(List<Integer> dice){
+//        System.out.print("___________");
+//        for(var die : dice){
+//            System.out.print(die + " ");
+//        }
+//        System.out.print("\n------\n");
+//    }
 //    static public int getChoice(){
 //        System.out.print("which die would you like to roll? 1-5");
 //        String input = scanner.nextLine();

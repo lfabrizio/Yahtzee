@@ -19,8 +19,8 @@ public class Console {
        System.out.println(output);
     }
 
-    public void showRoll(List<Die> dice){
-        System.out.println("Roll");
+    static public void showRoll(List<Die> dice){
+        System.out.println("*****Roll*****");
         for(var die : dice){
             System.out.println(die.getDiceValue());
         }
@@ -29,7 +29,7 @@ public class Console {
 
 
 //        // fresh code , trying different approach
-//           public void playGame() {
+//           will implement more user prompts
 //
 //               System.out.println("Welcome to Yahtzee!");
 //               System.out.println("Press any key to begin");

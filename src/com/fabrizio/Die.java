@@ -11,7 +11,7 @@ public class Die {
 
     //constructor
     public Die() {
-        diceValue = 1;
+       this.diceValue  = diceValue = 1;
     }
 
     // A Dice Value Method
