@@ -9,15 +9,18 @@ public class Console {
    static public void welcome(String gameChoice) {
 
        System.out.print("Welcome to " + gameChoice);
+       System.out.println("\n");
    }
 
 
     static public void showRoll(List<Die> dice){
-        System.out.print("*****Roll*****");
+        System.out.print("*****Player's Roll*****");
+        System.out.println("\n");
+
         for(var die : dice){
             System.out.print(die.getDiceValue() + " ");
         }
-        System.out.println("\n----\n");
+        System.out.println("\n**********************\n");
     }
 
     static public void log(String output)

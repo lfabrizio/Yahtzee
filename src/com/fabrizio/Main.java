@@ -28,5 +28,5 @@ public class Main {
         //    System.out.println(play.getDice().get(die));
    // YahtzeeConsole.displayHand(play.getDice())
      //play.roll(rand, YahtzeeConsole.getChoice());
-       // YahtzeeConsole.displayHand(play.getDice());
+       // YahtzeeConsole
        //play.roll(rand , YahtzeeConsole.getChoices());

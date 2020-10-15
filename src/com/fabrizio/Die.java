@@ -24,7 +24,7 @@ public class Die {
      //   System.out.println(diceValue);
         return diceValue;
     }
-
+    // Probably NOT needed
     //public void setValue(int diceValue){
     // this.diceValue=diceValue;
     //}
