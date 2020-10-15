@@ -19,7 +19,7 @@ public class Main {
        //
         // System.out.println("-----------");
       //  List<Integer> choices = new ArrayList<>();
-      //  choices.add(2);
+      //  choices.add(2); changed to clean code will adjust later s
         //choices.add(4);
       //  play.roll(rand, choices);
        // for (int die = 0; die < play.getDice().size(); die++) {

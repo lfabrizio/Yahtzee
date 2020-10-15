@@ -31,14 +31,6 @@ public class Player {
 
 
 
-
-
-               // overloading , this will roll at that index if number is submitted. choice will be the index
-//        public void roll(Random rand, int choice) {
-//            int selection = choice -1;
-//       //dice.get(selection).roll(rand);
-//           // System.out.println(dice.get(findDie(choice)).roll(rand));
-//        }
 //    //multiple
 //        public void roll(Random rand, List<Integer> choices) {
 //            for (int choice : choices) {
