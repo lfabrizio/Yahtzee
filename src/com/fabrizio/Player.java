@@ -44,13 +44,9 @@ public class Player {
                //public void setDice(List<Die> dice) {
                //  this.dice = dice;
 
-//        public List<Integer> getDice(){
-//            List<Integer> values = new ArrayList<>();
-//            for(var die : dice) {
-//                values.add(die.getValue());
-//            }
-//            return values;
-//        }
+      public List<Die> getDice(){
+           return dice;
+          }
 
 //        // get yahtzee
 //    public boolean confirmYahtzee(){

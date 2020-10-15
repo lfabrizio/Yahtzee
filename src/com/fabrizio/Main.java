@@ -7,16 +7,12 @@ import java.util.Random;
 public class Main {
 
     public static void main(String[] args) {
-     Random rand = new Random();
-   //YahtzeeConsole.startGame();
-    Player play = new Player(5);
 
-        System.out.println("which die would you like to roll?");
-        // nextInt and scanner
-        //output new dice roll
-   // YahtzeeConsole.displayHand(play.getDice());
+        YahtzeeConsole playGame = new YahtzeeConsole();
+        playGame.playGame();
 
-       //
+
+
         // System.out.println("-----------");
       //  List<Integer> choices = new ArrayList<>();
       //  choices.add(2); changed to clean code will adjust later s

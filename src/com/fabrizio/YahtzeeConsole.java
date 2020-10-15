@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class YahtzeeConsole extends Console{
     public YahtzeeConsole() {
-        // empty constructor 
+        // empty constructor
 
     }
 

@@ -1,5 +1,6 @@
 package com.fabrizio;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class Console {
@@ -17,6 +18,15 @@ public class Console {
 
        System.out.println(output);
     }
+
+    public void showRoll(List<Die> dice){
+        System.out.println("Roll");
+        for(var die : dice){
+            System.out.println(die.getDiceValue());
+        }
+        System.out.println("\n");
+    }
+
 
 //        // fresh code , trying different approach
 //           public void playGame() {
