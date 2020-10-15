@@ -6,36 +6,33 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Player {
-    Scanner scanner = new Scanner(System.in);
-    private List<Die> dice = new ArrayList<Die>();
 
-    public Player(int size) {
+        private List<Die> dice = new ArrayList<Die>();
 
-        for (int count = 0; count < size; count++)
-            dice.add(new Die());
-        // r
-    }
-
-
-        // fresh code , trying different approach
-           public void playGame() {
-
-               System.out.println("Welcome to Yahtzee!");
-               System.out.println("Press any key to begin");
-               scanner.nextLine();
-               for (int count = 0; count < 5; count++) {
-                   System.out.println(dice.add(new Die()));
-                   dice.get(count).roll();
-               }
-           }
-
-
-     public void roll(Random rand){
-        for(var die : dice){
-               //System.out.println(die.roll());
-
+        // create hand and pass in size-- loop though the size, count and add to List
+        public Player(int size){
+            for(int count = 0; count < size; count++){
+                dice.add(new Die());
+            }
         }
-    }
+
+
+        // moved roll method to Player class - may make more sense
+        public void Roll(Random random){
+            for(var die : dice){
+                die.Value(random);
+            }
+        }
+
+        // overloading of method to receive specific die
+        public void Roll(Random random, int specificDice){
+            dice.get(specificDice).Value(random);
+        }
+
+
+
+
+
                // overloading , this will roll at that index if number is submitted. choice will be the index
 //        public void roll(Random rand, int choice) {
 //            int selection = choice -1;
