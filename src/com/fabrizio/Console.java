@@ -38,13 +38,13 @@ public class Console {
 //        System.out.print("Which Die Would You Like to Roll?");
 //        String input = scanner.nextLine();
 //            //need to split spaces
-//        String[] inputArray = input.split(" ");
+//        String[] inputArray = inputArray.split(" ");
 //        List <Integer> choices = new ArrayList<Integer>();
 //                for (String number : inputArray){
 //                    choices.add(Integer.parseInt(number) - 1);
 //                }
-
-                return choices;
-    }
+//
+//                return choices;
+//    }
 
 }
