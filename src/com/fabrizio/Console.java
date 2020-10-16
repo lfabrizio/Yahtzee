@@ -34,13 +34,7 @@ public class Console {
     }
 
 
-//    static public int getChoice(){
-//        System.out.print("which die would you like to roll? 1-5");
-//        String input = scanner.nextLine();
-//        return Integer.parseInt(input) -1;
-//    }
-
-         static public List<Integer> getChoices() {
+    static public List<Integer> getChoices() {
         System.out.print("Which Die Would You Like to Roll?");
         String input = scanner.nextLine();
             //need to split spaces
@@ -49,6 +43,7 @@ public class Console {
                 for (String number : inputArray){
                     choices.add(Integer.parseInt(number) - 1);
                 }
+           
                 return choices;
     }
 
