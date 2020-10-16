@@ -1,11 +1,12 @@
 package com.fabrizio;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class Console {
     // console class
-
+    static Scanner scanner = new Scanner(System.in);
    static public void welcome(String gameChoice) {
 
        System.out.print("Welcome to " + gameChoice);
@@ -38,15 +39,17 @@ public class Console {
 //        String input = scanner.nextLine();
 //        return Integer.parseInt(input) -1;
 //    }
-//     static public List<Integer> getChoices() {
-//        System.out.print("Which Die Would You Like to Roll?");
-//        String input = scanner.nextLine();
-    // need to split spaces
-//        String[] inputArray = input.split(" ");
-//        List <Integer> choices = new ArrayList<>();
-//                for (String choice : inputArray){
-//                    choices.add(Integer.parseInt(choice) - 1);
-//                }
-//                return choices;
-//    }
+
+         static public List<Integer> getChoices() {
+        System.out.print("Which Die Would You Like to Roll?");
+        String input = scanner.nextLine();
+            //need to split spaces
+        String[] inputArray = input.split(" ");
+        List <Integer> choices = new ArrayList<Integer>();
+                for (String number : inputArray){
+                    choices.add(Integer.parseInt(number) - 1);
+                }
+                return choices;
+    }
+
 }
