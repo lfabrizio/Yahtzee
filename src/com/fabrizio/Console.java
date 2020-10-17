@@ -1,5 +1,7 @@
 package com.fabrizio;
 
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -7,6 +9,7 @@ import java.util.Scanner;
 public class Console {
     // console class
     static Scanner scanner = new Scanner(System.in);
+    public int rounds = 1;
    static public void welcome(String gameChoice) {
 
        System.out.print("Welcome to " + gameChoice);
@@ -24,14 +27,7 @@ public class Console {
         System.out.println("\n**********************\n");
     }
 
-//    static public void log(String output)
-//    {
-//        System.out.println(output);
-//    }
-//    static public void log(int output){
-//
-//        System.out.println(output);
-//    }
+
 
 
     static public List<Integer> getChoices() {
@@ -45,5 +41,11 @@ public class Console {
                 }
                 return choices;
     }
+
+    // add in rounds
+
+
+
+
 
 }

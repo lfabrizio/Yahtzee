@@ -49,13 +49,19 @@ public class Player {
            return dice;
           }
 
-//        // get yahtzee
-//    public boolean confirmYahtzee(){
-//            int yahtzee = dice.get(0).getValue();
-//            for(int read = 0; read < dice.size(); read++){
+    // get yahtzee
+    public boolean confirmYahtzee() {
+        int yahtzee = dice.get(0).getDiceValue();
+        for (int i = 0; i < dice.size(); i++) {
+            if (dice.get(i).getDiceValue() != yahtzee) {
+                System.out.println("***Not a Yahtzee!***");
+                return false;
+            }
+        }
+        System.out.println("***YAHTZEE!!***");
+        return true;
 
-//    }
-
+    }
 }
 
 
