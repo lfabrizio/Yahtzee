@@ -19,6 +19,7 @@ public class YahtzeeConsole extends Console{
        Console.showRoll(play.getDice());
         // implement user choice for re-roll
        play.Roll(random, Console.getChoices());
+        Console.showRoll(play.getDice());
     }
 
 

@@ -24,27 +24,26 @@ public class Console {
         System.out.println("\n**********************\n");
     }
 
-    static public void log(String output)
-    {
-        System.out.println(output);
-    }
-    static public void log(int output){
-
-        System.out.println(output);
-    }
-
-
-//    static public List<Integer> getChoices() {
-//        System.out.print("Which Die Would You Like to Roll?");
-//        String input = scanner.nextLine();
-//            //need to split spaces
-//        String[] inputArray = inputArray.split(" ");
-//        List <Integer> choices = new ArrayList<Integer>();
-//                for (String number : inputArray){
-//                    choices.add(Integer.parseInt(number) - 1);
-//                }
-//
-//                return choices;
+//    static public void log(String output)
+//    {
+//        System.out.println(output);
 //    }
+//    static public void log(int output){
+//
+//        System.out.println(output);
+//    }
+
+
+    static public List<Integer> getChoices() {
+        System.out.print("Which Die Would You Like to Roll?");
+        String input = scanner.nextLine();
+            //need to split spaces
+        String[] inputArray = input.split("");
+       List <Integer> choices = new ArrayList<Integer>();
+                for (String number : inputArray){
+                    choices.add(Integer.parseInt(number)- 1);
+                }
+                return choices;
+    }
 
 }
